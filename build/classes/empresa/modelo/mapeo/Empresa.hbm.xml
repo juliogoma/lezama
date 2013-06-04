@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2013 10:46:51 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="lezama" name="empresa.modelo.Empresa" table="empresa">
+        <id name="id" type="java.lang.Integer">
+            <generator class="identity" />
+        </id>
+        <property name="razsocial" />
+        <property name="ruc" />
+        <property name="gerencia" />
+        <property name="divison" />
+        <property name="area" />
+        <property name="ubicacion" />
+        
+        
+    </class>
+</hibernate-mapping>
+

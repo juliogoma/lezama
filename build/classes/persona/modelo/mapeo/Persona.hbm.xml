@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2013 10:46:51 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="lezama" name="persona.modelo.Persona" table="persona">
+        <id name="id" type="java.lang.Integer">
+            <generator class="identity" />
+        </id>
+        <property name="dni" />
+        <property name="nombre" />
+        <property name="apePaterno" />
+        <property name="apeMaterno" />
+        <property name="sexo" />
+        <property name="estadoCivil" />
+        <property name="fechaNac" />
+        <property name="lugarNac" />
+        <property name="telefono" />
+        <property name="correo" />
+        <property name="celular" />
+        
+        
+    </class>
+</hibernate-mapping>
+

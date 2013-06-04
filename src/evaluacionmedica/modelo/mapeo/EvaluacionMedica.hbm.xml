@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2013 10:46:51 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="lezama" name="evaluacionmedica.modelo.EvaluacionMedica" table="evaluacionmedica">
+        <id name="id" type="java.lang.Integer">
+            <generator class="identity" />
+        </id>
+        <property name="anteOcupacionales" />
+        <property name="antePersonales" />
+        <property name="anteFamiliares" />
+        <property name="habitos" />
+        <property name="numHijos" />
+        <property name="estadofamilares" />
+        <property name="antePatologicos" />
+        <property name="diagnostico" />
+        <property name="recomendaciones" />
+        
+        
+    </class>
+</hibernate-mapping>
+

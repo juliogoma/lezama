@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    
+    <definition name="baseLayout" template="/tiles/baseLayout.jsp">
+        <put-attribute name="title" value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header.jsp"/>
+        <put-attribute name="portada" value="/tiles/portada.jsp"/>
+        <put-attribute name="opcion" value="/tiles/opcion.jsp"/>
+        <put-attribute name="body" value="/tiles/body.jsp"/>
+        <put-attribute name="footer" value="/tiles/footer.jsp"/>
+    </definition>
+   
+    <definition name="cargar" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="body"   value="/vistas/login.jsp"/>
+    </definition>
+    
+    <definition name="intranet" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+    </definition>
+    <definition name="personal" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/personal/oppersonal.jsp"/>
+    </definition>
+    <definition name="empleado" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/empleado/opempleado.jsp"/>
+    </definition>
+    <definition name="agPerso" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/personal/oppersonal.jsp"/>
+        <put-attribute name="body" value="/vistas/personal/agPersonal.jsp"/>
+    </definition> 
+    <definition name="registro_ok_perso" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/personal/oppersonal.jsp"/>
+        <put-attribute name="body" value="/vistas/personal/Mensajeok.jsp" />
+    </definition>
+    <definition name="empresa" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/empresa/opempresa.jsp"/>
+    </definition>
+    <definition name="agEmpre" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/empresa/opempresa.jsp"/>
+        <put-attribute name="body" value="/vistas/empresa/agEmpresa.jsp"/>
+    </definition> 
+    <definition name="agEmple" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/empleado/opempleado.jsp"/>
+        <put-attribute name="body" value="/vistas/empleado/agEmpleado.jsp"/>
+    </definition> 
+    <definition name="registro_ok_emp" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/personal/oppersonal.jsp"/>
+        <put-attribute name="body" value="/vistas/empresa/Mensajeok.jsp" />
+    </definition>
+    <definition name="registro_ok_emple" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/empleado/opempleado.jsp"/>
+        <put-attribute name="body" value="/vistas/empleado/Mensajeok.jsp" />
+    </definition>
+    <definition name="listarPersonal" extends="baseLayout">
+        <put-attribute name="title"  value="LEZAMA"/>
+        <put-attribute name="header" value="/tiles/header2.jsp"/>
+        <put-attribute name="opcion" value="/vistas/personal/oppersonal.jsp"/>
+        <put-attribute name="body" value="/vistas/personal/Listar.jsp"/>
+    </definition> 
+    
+    
+</tiles-definitions>

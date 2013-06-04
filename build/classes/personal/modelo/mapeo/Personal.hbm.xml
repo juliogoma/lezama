@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2013 10:46:51 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <joined-subclass catalog="lezama" name="personal.modelo.Personal" table="personal" extends="persona.modelo.Persona">
+        <key column="id"/>
+        <property name="codColegio" />
+        <property name="cargo" />
+        <property name="estado" />
+        <property name="fechContrato" />
+        <property name="usuario" />
+        <property name="password" />
+    </joined-subclass>
+</hibernate-mapping>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <package name="default" extends="struts-default">
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+        </result-types>
+        <action name="*Link" method="{1}" class="action.LinkAction">
+            <result name="cargar" type="tiles">cargar</result>
+            <result name="personal" type="tiles">personal</result>
+            <result name="empresa" type="tiles">empresa</result>
+            <result name="empleado" type="tiles">empleado</result>
+            
+        </action>
+        <action name="login" class="personal.controlador.PersonalControllerForm">
+            <result name="success" type="tiles">intranet</result>
+            <result name="error" type="tiles">cargar</result>
+        </action>
+        <action name="mostrarFormularioper" class="personal.controlador.PersonalControllerForm" method="mostrarFormulario">
+            <result name="success" type="tiles">agPerso</result>
+        </action>
+        <action name="agregarper" class="personal.controlador.PersonalController" method="guardar">
+            <result name="success" type="tiles">registro_ok_perso</result>
+            <result name="error" type="tiles">personal</result>
+        </action>
+         <action name="mostrarFormularioemp" class="empresa.controlador.EmpresaControllerForm" method="mostrarFormulario">
+            <result name="success" type="tiles">agEmpre</result>
+        </action>
+         <action name="mostrarFormularioemple" class="empleado.controlador.EmpleadoControllerForm" method="mostrarFormulario">
+            <result name="success" type="tiles">agEmple</result>
+        </action>
+        <action name="agregarEmpresa" class="empresa.controlador.EmpresaController" method="guardar">
+            <result name="success" type="tiles">registro_ok_emp</result>
+            <result name="error" type="tiles">empresa</result>
+        </action>
+        <action name="agregarEmpleado" class="empleado.controlador.EmpleadoController" method="guardar">
+            <result name="success" type="tiles">registro_ok_emple</result>
+            <result name="error" type="tiles">empleado</result>
+        </action>
+        <action name="listarPersonal" class="personal.controlador.PersonalControllerForm" method="listar">
+            <result name="success" type="tiles" >listarPersonal</result>
+            <result name="input" type="tiles">listarPersonal</result>
+        </action>
+        
+    </package>
+</struts>
